@@ -4,8 +4,8 @@ const Divider = () => (
   <View
     style={{
       height: '1px',
-      marginTop: '13px',
-      marginBottom: '12px',
+      marginTop: '2px',
+      marginBottom: '8px',
       width: '100%',
       backgroundColor: '#084c41',
     }}

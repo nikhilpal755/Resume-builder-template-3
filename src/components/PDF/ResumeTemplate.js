@@ -17,6 +17,7 @@ import { BuilderContext } from './../../App'
 import { PDFViewer, PDFDownloadLink } from '@react-pdf/renderer'
 import { Right as SectionRight } from './Sections/Right_'
 import { Left as SectionLeft } from './Sections/Left_'
+import {Top as SectionTop} from './Sections/top_'
 
 // Font.register({
 //   family: 'Roboto',
@@ -37,8 +38,8 @@ const PreviewScreen = () => {
       <PDFViewer
         showToolbar={false}
         style={{
-          width: '100%',
-          height: '100%',
+          width: '50vw',
+          height:'100vh',
           // fontFamily: 'Roboto',
         }}
       >
@@ -57,9 +58,12 @@ const PreviewScreen = () => {
 const ResumeTemplate = ({ builder }) => (
   <Document style={styles.document}>
     <Page size='A4' style={styles.page}>
-      <BuilderContext.Provider value={builder}>
-        <SectionLeft />
-        <SectionRight />
+      <BuilderContext.Provider value={builder} >
+        
+       
+              <SectionTop/>   
+           
+  
       </BuilderContext.Provider>
     </Page>
   </Document>

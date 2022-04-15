@@ -11,6 +11,9 @@ import Projects from './Projects'
 import Profile from './Profile'
 import Contact from './Contact'
 import Certifications from './Certifications'
+import Languages from './languages'
+
+
 const ResumeEdit = () => {
   const ctx = useContext(BuilderContext)
   const [selected, setSelect] = useState('Education')
@@ -32,9 +35,10 @@ const ResumeEdit = () => {
             options={[
               'Education',
               'Skills',
-              'Certifications',
+              // 'Certifications',
               'Contact',
               'Socials',
+              // 'Languages'
             ]}
             handleChange={handleSelect}
             style=' pb-3'
@@ -44,7 +48,8 @@ const ResumeEdit = () => {
           {selected === 'Education' && <Education />}
           {selected === 'Skills' && <Skills />}
           {selected === 'Contact' && <Contact />}
-          {selected === 'Certifications' && <Certifications />}
+          {/* {selected === 'Certifications' && <Certifications />} */}
+          {/* {selected === 'Languages' && <Languages/>} */}
         </div>
 
         <div className='w-full'>

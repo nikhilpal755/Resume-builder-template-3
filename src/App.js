@@ -31,10 +31,14 @@ function App() {
         ],
       },
       {
-        header: 'Key Skills',
-        type: 'KeySkills',
+        header: 'Professional Skills',
+        type: 'Professional Skills',
         display: true,
-        text: '• Knowledge of basic coding languages including C++, HTML5, and JavaScript.\n• Basic knowledge of  SQL, NoSQL databases\n• Knowledgable on Node.js, Spring, Hibernate\n• Extensive Linux/Unix experience\n• Software testing (Jest, Chai, Mocha)\n• CI/CD Basics ',
+        items: [
+          {
+            text: '• Knowledge of basic coding languages including C++, HTML5, and JavaScript.\n• Basic knowledge of  SQL, NoSQL databases\n• Knowledgable on Node.js, Spring, Hibernate\n• Extensive Linux/Unix experience\n• Software testing (Jest, Chai, Mocha)\n• CI/CD Basics ',
+          }
+        ]
       },
       {
         header: 'Employment History',
@@ -62,7 +66,7 @@ function App() {
       {
         header: 'Projects',
         type: 'Projects',
-        display: true,
+        display: false,
         items: [
           {
             name: 'Poker Simulator',
@@ -126,7 +130,7 @@ function App() {
         ],
       },
       {
-        header: 'Contact',
+        header: 'Details',
         type: 'Contact',
         display: true,
         items: [
@@ -140,7 +144,20 @@ function App() {
             text: 'www.eliotdev.com',
           },
         ],
-      },
+      },{
+        header: 'Languages',
+        type: 'Languages',
+        items: [{
+          text: 'English',
+          level: 'Native',
+        },{
+          text: 'French',
+          level: 'Fluent',
+        },{
+          text: 'Spanish',
+          level: 'Fluent',
+        }]
+      }
     ],
   })
   const getComponentData = (type) => {

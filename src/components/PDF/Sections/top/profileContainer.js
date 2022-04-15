@@ -8,7 +8,7 @@ const ProfileImage = ({ url, display }) => (
         style={{
           width: '60px',
           height: '60px',
-          borderRadius: '90',
+          borderRadius: '90px',
         }}
         src={url}
       />
@@ -16,31 +16,35 @@ const ProfileImage = ({ url, display }) => (
   </>
 )
 
-export const ProfileContainer = ({ name, profession, url, display }) => {
+export const ProfileContainer = ({ profile}) => {
+  const name = profile.name;
+  const profession = profile.profession;
+  const url = profile.profileImageURL;
+  const display = profile.display;
+  // console.log(profile)
   return (
     <View
       style={{
-        // display: 'flex',
-        // flexDirection: 'column',
-        // // alignItems: 'center',
-        // marginTop: '20',
-        // marginBottom: display ? '20px' : '-65px',
-        // // height: '150',
-        // fontFamily: 'Helvetica-Bold',
-        // marginLeft: '20',
-
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        marginTop: '20',
+        marginBottom: display ? '20px' : '-65px',
+        height: '150',
+        fontFamily: 'Helvetica-Bold',
+        // marginLeft: '10%'
       }}
     >
       <ProfileImage url={url} display={display} />
       <View
         style={{
-          // justifyContent: 'center',
+          justifyContent: 'center',
         }}
       >
         <Text style={styles.name_text}>{name}</Text>
       </View>
       <Text style={styles.profession_text}>{profession}</Text>
-      {/* <View
+      <View
         style={{
           marginTop: '10px',
           width: '10%',
@@ -48,7 +52,7 @@ export const ProfileContainer = ({ name, profession, url, display }) => {
           backgroundColor: '#FFF',
           textAlign: 'center',
         }}
-      /> */}
+      />
     </View>
   )
 }

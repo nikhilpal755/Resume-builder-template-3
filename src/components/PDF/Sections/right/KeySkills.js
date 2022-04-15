@@ -3,9 +3,9 @@ import Divider from './Divider'
 
 const KeySkills = ({ skills }) => {
   return (
-    <View>
+    <View style={{marginTop: '10'}}>
       {skills.display && (
-        <View style={{ paddingTop: '10px' }}>
+        <View style={{ paddingBottom: '10' }}>
           <Text
             style={{
               color: '#000',

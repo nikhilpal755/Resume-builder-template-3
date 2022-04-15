@@ -6,31 +6,52 @@ export default StyleSheet.create({
     flexDirection: 'row',
   },
   section__top: {
-    flexGrow: 1,
-    backgroundColor: '#084c41',
-    height: '100%',
+   
+    // height: '20%',
+    // width: '100vw',
+    width: '100%',
+    // backgroundColor: 'whitesmoke',
+    // postion:'absolute',
+    // top : 0  
   },
-
+  document: {
+    padding: '10%'
+  },
   section__right: {
     margin: 10,
     padding: 10,
     paddingTop: 20,
-    width: '75%',
+    width: '70%',
+    // marginTop: '30%',
+    // marginLeft: '-5%'
+    // backgroundColor: 'whitesmoke',
+    // display: 'inline-block',
+    alignSelf: 'flex-end',
+    
+    height: '100%',
+    // marginTop: '50'
   },
   section__left: {
-    width: '25%',
-    backgroundColor: '#084c41',
+    width: '30%',
+    // backgroundColor: '#084c41',
+    color: 'black',
+    height: '100%',
+
+    // marginTop: '27%',
+    // marginLeft: '-15%'
+    // display: 'inline-block',
+    alignSelf: 'flex-start'
   },
   name_text: {
     paddingTop: '10px',
     paddingBottom: '5px',
     fontSize: '14px',
     fontWeight: '900',
-    color: 'white',
+    // color: 'white',
   },
   profession_text: {
     // fontFamily: 'Roboto',
-    color: '#d1d5db',
+    // color: '#d1d5db',
     fontSize: '11px',
   },
   heading__text: {
@@ -62,7 +83,7 @@ export default StyleSheet.create({
     backgroundColor: '#FFF',
   },
   skill__item__text: {
-    color: '#FFF',
+
     fontSize: '9',
   },
   socials__container: {
@@ -71,4 +92,5 @@ export default StyleSheet.create({
     justifyContent: 'space-evenly',
     paddingTop: '20',
   },
+ 
 })
